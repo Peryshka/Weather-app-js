@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700&family=Lora:wght@700&family=Montserrat:wght@400;700&family=Nanum+Gothic:wght@800&family=Noto+Sans&family=Oxygen:wght@400;700&family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css"></link>
+</head>
+<body>
+<div class="page-wrap">
+  <div class="container">
+    <div class="weather-wrap">
+      <div class="weather-title">
+         <h1 class="title">
+           Today Weather Details
+         </h1>
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h4>
+          <span class="space rest">
+            Bibendum cursus quis.
+          </span>
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Please enter city name" class="input">
+        <button class="btn">Add</button>
+      </div>
+      <div class="weather-blocks">
+        <div class="details">
+          <div class="sunset-sunrise">
+            <div class="sunrise">
+              <span class="space sunr">
+                Sunrise
+              </span>
+              <span class="space">
+                6:42 am
+              </span>
+            </div>
+            <div class="sunset">
+              <span class="space suns">
+                Sunset
+              </span>
+              <span class="space">
+                7:30 pm
+              </span>
+            </div>
+          </div>
+          <div class="other-details">
+            <div class="first-block">
+              <i class="wind-img"></i>
+              <span>Wind 3km/h</span>
+              <i class="wind-img"></i>
+              <span>Wind 3km/h</span>
+            </div>
+            <div class="second-block">
+              <i class="rain-img"></i>
+              <span>Rain 78%</span>
+              <i class="rain-img"></i>
+              <span>Rain 78%</span>
+            </div>
+          </div>
+        </div>
+        <div class="temp-info">
+          <span class="today">Today</span>
+          <img src="./img/mist.png" alt="main-condition" class="main-condition">
+          <h2 class="temp">23℃</h2>
+          <span class="min-temp">23℃ - <span class="max-temp">31℃</span></span>
+        </div>
+        <div class="hour-temp-details">
+          <div class="second-temp-block">
+            <span class="min-temp second">23℃ - </span>
+            <span class="max-temp second">31℃</span>
+          </div>
+          <div class="hour-temp-details-block">
+              <div class="first-hour">
+                  <i class="cond-img first"></i>
+                  <span class="temperature">24℃ </span>
+                  <span class="time">1:00 pm</span>
+                  <span class="main-cond">Cloudy</span>
+              </div>
+            <div class="second-hour">
+              <i class="cond-img second"></i>
+              <span class="temperature">24℃ </span>
+              <span class="time">1:00 pm</span>
+              <span class="main-cond">Cloudy</span>
+            </div>
+            <div class="third-hour">
+              <i class="cond-img third"></i>
+              <span class="temperature">24℃ </span>
+              <span class="time">1:00 pm</span>
+              <span class="main-cond">Cloudy</span>
+            </div>
+          </div>
+          <div class="final-block">
+            <span class="news">News Update</span>
+            <span class="tomorrow">View Tomorrow forecast -> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

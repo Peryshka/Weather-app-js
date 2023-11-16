@@ -1,0 +1,337 @@
+/* Reset Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 21px;
+  height: 620px;
+  background: url('./img/nightSky3.jpg') center center/cover no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+/* The end of Reset Styles */
+
+/* Main styles */
+.weather-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.weather-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 57px;
+  line-height: 74px;
+  font-weight: 700;
+}
+
+h4{
+  padding-left: 6rem;
+  padding-right: 6rem;
+  font-size: 20px;
+}
+
+.rest {
+  font-size: 20px;
+  margin-top: 5px;
+}
+span .space {
+  display: block;
+}
+
+.input-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.input {
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid white;
+  width: 250px;
+  margin-right: 20px;
+ text-align: center;
+  outline: none;
+}
+  .input::placeholder {
+   color: grey;
+  }
+
+
+  .btn {
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid white;
+  width: 100px;
+  color: grey;
+}
+
+.weather-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.sunset-sunrise {
+  display: flex;
+  justify-content: space-evenly;
+  width: 416px;
+  height: 204px;
+}
+
+.sunrise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  background: url('./img/sunrise.jpeg') no-repeat;
+  width: 196px;
+  height: 404px;
+  margin-right: 20px;
+  opacity: 0.7;
+  padding-top: 80px;
+}
+
+.sunrise span {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.sunrise span.sunr {
+   margin-bottom: 10px;
+}
+
+.sunset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  background: url('./img/sunset.jpeg') no-repeat;
+  width: 196px;
+  height: 404px;
+  margin-right: 20px;
+  opacity: 0.7;
+  padding-top: 80px;
+}
+
+.sunset span {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-size: 24px;
+}
+
+.sunset span.suns {
+  margin-bottom: 10px;
+}
+
+.other-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 416px;
+  width: 100%;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-right: 20px;
+}
+.first-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.wind-img {
+  display: block;
+  background: url('./img/wind.png') center center/contain no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.second-block {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.rain-img {
+  display: block;
+  background: url('./img/rain.png') center center/contain no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.temp-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 30px;
+  margin-left: 20px;
+  background:linear-gradient(317.63deg,#353589 -7.42%,#9a9aff 120.45%);
+}
+
+.temp-info .today {
+  padding: 6px 20px;
+  background: darkblue;
+  border-radius: 30px;
+  width: 80px;
+}
+
+.main-condition {
+  width: 169px;
+  height: 157px;
+}
+
+.temp {
+  font-size: 76px;
+  line-height: 99px;
+  margin-top: 10px;
+}
+
+.temp-info .min-temp {
+  display: inline;
+}
+
+.temp-info .max-temp {
+  display: inline;
+}
+
+.temp-info .min-temp, .max-temp {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.hour-temp-details {
+  display: flex;
+  flex-direction: column;
+  background: rebeccapurple;
+  padding: 10px 45px 23px 30px;
+  margin-left: 20px;
+  border-radius: 30px;
+  opacity: 0.7;
+}
+
+.min-temp.second {
+  font-size: 57px;
+  line-height: 74px;
+}
+
+.max-temp.second {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.hour-temp-details-block {
+  display: flex;
+}
+
+.hour-temp-details-block:last-child {
+  margin-right: 0;
+}
+
+.first-hour,
+.second-hour,
+.third-hour{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.cond-img.first {
+  display: block;
+  background: url('./img/clouds.png') center center/contain no-repeat;
+  height: 24px;
+  width: 24px;
+}
+
+.cond-img.second {
+  display: block;
+  background: url('./img/drizzle.png') center center/contain no-repeat;
+  height: 24px;
+  width: 24px;
+}
+
+.cond-img.third {
+  display: block;
+  background: url('./img/mist.png') center center/contain no-repeat;
+  height: 24px;
+  width: 24px;
+}
+
+.temperature {
+  margin-top: 0.25rem;
+}
+
+.time {
+  margin-top: 0.5rem;
+}
+
+.main-cond {
+  margin-top: 0.25rem;
+}
+
+.final-block {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.news {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.tomorrow {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The end of main styles */
